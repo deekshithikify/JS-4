@@ -1,0 +1,22 @@
+<head>
+    <title>Hello page</title>
+</head>
+<body>
+      
+    <h1 style="color: blue"> Enter your age to know insurance premium</h1>
+    <input type="number" id="tb" placeholder="age here">
+    <input type="submit" id="bt" oneclick="jsfunc()">
+
+    <script>
+
+        function jsfunc()
+        {
+            var val=parseInt (document.getElementById("td").value);
+            if (val <= 18 ) alert("premium is 2000/month");
+            else if ( val <= 30) alert("premium is 4000/month");
+            else if ( val <= 50) alert("premium is 6000/month");
+            else alert ("premium is 9000/month");
+        }
+        
+    </script>
+</body>
